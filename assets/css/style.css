@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: auto;
+}
+
+body {
+  background-color: rgb(240, 244, 246);
+}
+
+header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: green;
+  color: white;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 50px;
+}
+/* nav elements */
+nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li { 
+  display: inline-block;
+  margin-left: 40px;
+}
+/* texts elements */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+/* background image */
+.Port {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/background.jpeg");
+  background-size: cover;
+  background-position: center; 
+}
+.section + h2 {
+  font-size: 30px;
+}
+
+
+
+/* flex behavior */
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-item{
+  min-height: 100px;
+  max-height: 100px;
+  display: flex;
+  flex-basis: 50%;
+}
+.flex-item:hover{
+  background-color: rgba(69, 21, 202, 0.3) !important;
+}
+#item1 {
+  background-color: gray;
+  flex-basis: 100%;
+  min-height: 300px;
+  font-size: 48px;
+}
+#item2 {
+  background-color: black;
+  font-size: 25px;
+}
+#item3 {
+  background-color: gainsboro;
+  color: black;
+  font-size: 25px;
+}
+#item4 {
+  background-color: gainsboro;
+  color: black;
+  font-size: 25px;
+}
+#item5 {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+
+/* positional css */
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+.content {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+  border: solid;
+  border-radius: auto;
+}
+/* aside section */
+.activities {
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 200%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: green;
+  border-color: black;
+  border-radius: auto;
+  border: solid;
+}
+
+.activity {
+  margin-bottom: 139px;
+  color: #ffffff;
+}
+
+.activity h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.activity img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
+.about {
+  /* margin-bottom: 40px; */
+  padding: 50px;
+  height: 50%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: green;
+  color: #ffffff;
+  border-radius: auto;
+
+}
+.about img {
+  max-height: 200px;
+}
+/* Item boxes */
+.michael {
+  
+  padding: 75px;
+  height: 80vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: green;
+  color: #ffffff;
+  border-radius: auto;
+  
+}
+
+
+.michael h2 {
+  margin-bottom: 20px;
+  font-size: 42px;
+}
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 600px;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 30px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+  /* name/email entry box */
+input, 
+textarea {
+  box-sizing: border-box;
+  width: 300px;
+  border: 1px solid #4F4846;
+}
+button {
+  height: 30px;
+  width: 120px;
+  background-color: #4F4846;
+  color: #FDF8F5;
+  
+}
+
+
+footer {
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 20px;
+}
+
+
+@media screen and (max-width:768px){
+  .flex-item, #item1 {
+    flex-basis: 100%;
+  }
+#item1 {
+  min-height: 100px;
+}
+.michael{
+  height: 90vh;
+}
+}
